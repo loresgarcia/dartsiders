@@ -1,0 +1,21 @@
+.usuario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.usuario-imagem {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.usuario-nome {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.usuario-cargo {
+    font-size: 14px;
+    color: #A700D0;
+}
