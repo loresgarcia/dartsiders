@@ -1,0 +1,13 @@
+.botao-logout {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.botao-logout span {
+    margin-right: 16px;
+}

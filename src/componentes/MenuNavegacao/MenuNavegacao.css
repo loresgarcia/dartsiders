@@ -1,0 +1,30 @@
+.navegacao {
+    width: 100%;  
+}
+
+.navegacao__lista {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacao__item {
+    box-sizing: border-box;
+    height: 41px;
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 8px 8px 8px 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.navegacao__item--ativo {
+    background-color: #A700D0;
+    border-radius: 4px;
+    color: #F2F2F2;
+}
+
+.navegacao__item span {
+    margin-left: 16px;
+}

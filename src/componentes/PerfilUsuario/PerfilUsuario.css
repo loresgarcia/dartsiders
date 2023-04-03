@@ -4,18 +4,18 @@
     text-align: center;
 }
 
-.usuario-imagem {
-    width: 128px;
-    height: 128px;
+.usuario__imagem {
     border-radius: 50%;
+    height: 128px;
+    width: 128px;
 }
 
-.usuario-nome {
-    font-weight: 700;
+.usuario__nome {
     font-size: 17px;
+    font-weight: 700;
 }
 
-.usuario-cargo {
-    font-size: 14px;
+.usuario__cargo {
     color: #A700D0;
+    font-size: 14px;
 }

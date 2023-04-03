@@ -1,6 +1,13 @@
+import { RiLogoutBoxRLine } from "react-icons/ri";
+
+import "./BotaoLogout.css";
+
 const BotaoLogout = () => {
     return (
-        <button>Logout</button>
+        <button className="botao-logout">
+            <span>Logout</span>
+            <RiLogoutBoxRLine />
+        </button>
     )
 }
 
