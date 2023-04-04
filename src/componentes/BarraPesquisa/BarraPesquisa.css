@@ -1,0 +1,10 @@
+.barra-pesquisa {
+    width: calc(100vw - 300px);
+    background-color: #FFFFFF;
+    height: 57px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 32px;
+    box-sizing: border-box;
+}

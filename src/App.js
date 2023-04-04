@@ -1,10 +1,8 @@
-import MenuLateral from "./componentes/MenuLateral";
+import PaginaInicial from "./paginas/PaginaInicial";
 
 function App() {
   return (
-    <div>
-      <MenuLateral />
-    </div>
+    <PaginaInicial />
   );
 }
 
