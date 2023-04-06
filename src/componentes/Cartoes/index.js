@@ -13,7 +13,7 @@ const Cartoes = () => {
             <Cartao 
                 icone={<BsBookmark size={ "40px" } style={{ color: "#FFFFFF" }}/>}
                 titulo={"Cursos"} 
-                subtitulo={"13"} 
+                subtitulo={"13"} // passando as props
             />
             <Cartao 
                 icone={<SlGraduation size={ "40px" } style={{ color: "#FFFFFF" }}/>}

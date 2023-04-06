@@ -1,12 +1,11 @@
 import "./Cartao.css";
 
-const Cartao = (props) => {
-    console.log(props)
+const Cartao = ({icone, titulo, subtitulo}) => { // recebendo as props
     return (
         <div className="cartao">
-            {props.icone}
-            <p>{props.titulo}</p>
-            <span>{props.subtitulo}</span>
+            {icone}
+            <p>{titulo}</p>
+            <span>{subtitulo}</span>
         </div>
     )
 }
