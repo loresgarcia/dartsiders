@@ -1,0 +1,5 @@
+.cartoes {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+}
