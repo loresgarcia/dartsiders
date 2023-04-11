@@ -1,6 +1,6 @@
-const Logo = () => {
+const Logo = ({tamanho = "menor"}) => {
     return (
-        <img src="imagens/logo-menor.png" alt="logo da dartsiders" />
+        <img src={`imagens/logo-${tamanho}.png`} alt="logo da dartsiders" />
     )
 }
 

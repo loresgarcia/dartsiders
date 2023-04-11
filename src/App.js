@@ -1,8 +1,8 @@
-import PaginaInicial from "./paginas/PaginaInicial";
+import PaginaLogin from "./paginas/PaginaLogin";
 
 function App() {
   return (
-    <PaginaInicial />
+    <PaginaLogin />
   );
 }
 

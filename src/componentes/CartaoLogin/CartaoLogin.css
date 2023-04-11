@@ -1,0 +1,30 @@
+.cartao-login {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    box-sizing: border-box;
+    min-height: 525px;
+    padding: 40px 30px;
+    text-align: center;
+    width: 475px;
+}
+
+.cartao-login__titulo {
+    color: #A700D0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cartao-login__subtitulo {
+    color: #6C6C6C;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.cartao-login__reset{
+    color: #A700D0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+}

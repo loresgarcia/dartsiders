@@ -7,7 +7,7 @@ import "./MenuLateral.css";
 const MenuLateral = () => {
     return (
         <section className="menu-lateral">
-            <Logo />
+            <Logo tamanho="menor" />
             <PerfilUsuario />
             <MenuNavegacao />
             <BotaoLogout />
