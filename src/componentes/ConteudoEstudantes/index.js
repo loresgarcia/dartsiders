@@ -56,32 +56,35 @@ const ConteudoEstudantes = () => {
                 <button className="estudantes__botao">Adicionar novo estudante</button>
             </div>
             <table className="estudantes__tabela">
-                <tr className="tabela__cabecalho">
-                    <th></th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
-                    <th>Matrícula</th>
-                    <th>Admissão</th>
-                    <th></th>
-                </tr>
-                {listaDeEstudantes.map((estudante) => (
-                    <tr className="tabela__estudante">
-                        <td className="tabela__primeira-celula">
-                            <img className="tabela__foto" src={estudante.foto} alt={`Foto de ${estudante.nome}`} /> 
-                        </td>
-                        <td>{estudante.nome}</td>
-                        <td>{estudante.email}</td>
-                        <td>{estudante.telefone}</td>
-                        <td>{estudante.matricula}</td>
-                        <td>{estudante.admissao}</td>
-                        <td className="tabela__ultima-celula">
-                            <button><VscEdit size={ "20px" } style={{ color: "#A700D0" }} /></button>
-                            <button><FiTrash size={ "20px" } style={{ color: "#A700D0" }} /></button>
-                        </td>
+                <thead>
+                    <tr className="tabela__cabecalho">
+                        <th></th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Matrícula</th>
+                        <th>Admissão</th>
+                        <th></th>
                     </tr>
-                ))}
-                
+                </thead>
+                <tbody>
+                    {listaDeEstudantes.map((estudante, idx) => (
+                        <tr className="tabela__estudante" key={idx}>
+                            <td className="tabela__primeira-celula">
+                                <img className="tabela__foto" src={estudante.foto} alt={`Foto de ${estudante.nome}`} /> 
+                            </td>
+                            <td>{estudante.nome}</td>
+                            <td>{estudante.email}</td>
+                            <td>{estudante.telefone}</td>
+                            <td>{estudante.matricula}</td>
+                            <td>{estudante.admissao}</td>
+                            <td className="tabela__ultima-celula">
+                                <button><VscEdit size={ "20px" } style={{ color: "#A700D0" }} /></button>
+                                <button><FiTrash size={ "20px" } style={{ color: "#A700D0" }} /></button>
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
             </table>
         </div>
     )
