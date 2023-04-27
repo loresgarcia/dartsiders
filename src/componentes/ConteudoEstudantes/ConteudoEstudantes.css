@@ -1,0 +1,74 @@
+.estudantes {
+    margin: 32px;
+    background-color: #F8F8F8;
+}
+
+.estudantes__cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.estudantes__titulo {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.estudantes__botao {
+    background-color: #A700D0;
+    border-radius: 4px;
+    width: 218px;
+    height: 33px;
+    color: #FFFFFF;
+    font-size: 14px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.estudantes__tabela {
+    font-size: 14px;
+    color: #404040;
+    width: 100%;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0 16px;
+}
+
+.tabela__cabecalho th {
+    padding: 24px;
+    font-weight: 600;
+}
+
+.tabela__estudante {
+    height: 87px;
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.tabela__estudante td {
+    padding: 24px;
+}
+
+.tabela__foto {
+    width: 65px;    
+    height: 55px;   
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.tabela__primeira-celula {
+    border-radius: 8px 0 0 8px;
+}
+
+.tabela__ultima-celula {
+    border-radius: 0 8px 8px 0;
+    text-align: right;
+}
+
+td button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
