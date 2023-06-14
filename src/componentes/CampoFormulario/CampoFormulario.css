@@ -1,0 +1,23 @@
+.campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.campo__input {
+    width: 75%;
+    height: 1.6rem;
+    border: none;
+    box-shadow: 4px 4px 4px #40404010;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.campo__input:focus {
+    outline: none;
+}
+
+.campo__input::placeholder {
+    font-family: "Montserrat", sans-serif;
+}
