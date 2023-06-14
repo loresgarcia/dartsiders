@@ -1,8 +1,8 @@
-import PaginaEstudantes from "./paginas/PaginaEstudantes";
+import PaginaInicial from "./paginas/PaginaInicial";
 
 function App() {
   return (
-    <PaginaEstudantes />
+    <PaginaInicial />
   );
 }
 

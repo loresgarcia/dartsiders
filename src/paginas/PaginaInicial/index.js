@@ -1,4 +1,5 @@
 import BarraPesquisa from "../../componentes/BarraPesquisa";
+import BarraResponsiva from "../../componentes/BarraResponsiva";
 import ConteudoInicio from "../../componentes/ConteudoInicio";
 import MenuLateral from "../../componentes/MenuLateral";
 
@@ -11,6 +12,7 @@ const PaginaInicial = () => {
             <div>
                 <BarraPesquisa />
                 <ConteudoInicio />
+                <BarraResponsiva />
             </div>      
         </div>
     )

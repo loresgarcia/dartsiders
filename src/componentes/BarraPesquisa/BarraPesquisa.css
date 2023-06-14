@@ -8,3 +8,9 @@
     padding: 0 32px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px) {
+    .barra-pesquisa {
+        display: none;
+    }
+}

@@ -9,3 +9,9 @@
     align-items: center;
     background-color: #DCDCDC;
 }
+
+@media screen and (max-width: 768px) {
+    .menu-lateral {
+        display: none;
+    }
+}
