@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
 import "./Cartao.css";
 
-const Cartao = ({icone, titulo, subtitulo}) => { // recebendo as props
+const Cartao = ({icone, titulo, subtitulo, link}) => { // recebendo as props
     return (
-        <div className="cartao">
-            {icone}
-            <p>{titulo}</p>
-            <span>{subtitulo}</span>
-        </div>
+        <Link to={link}>
+            <div className="cartao">
+                {icone}
+                <p>{titulo}</p>
+                <span>{subtitulo}</span>
+            </div>
+        </Link>
     )
 }
 

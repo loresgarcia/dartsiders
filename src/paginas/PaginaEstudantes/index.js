@@ -4,7 +4,7 @@ import MenuLateral from "../../componentes/MenuLateral";
 
 import "./PaginaEstudantes.css";
 
-const PaginaInicial = () => {
+const PaginaEstudantes = () => {
     return (
         <div className="pagina-estudantes">
             <MenuLateral />
@@ -16,4 +16,4 @@ const PaginaInicial = () => {
     )
 }
 
-export default PaginaInicial;
+export default PaginaEstudantes;

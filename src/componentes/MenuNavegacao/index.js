@@ -4,22 +4,27 @@ import { SlGraduation } from "react-icons/sl";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
 import "./MenuNavegacao.css";
+import { Link } from "react-router-dom";
 
 const MenuNavegacao = () => {
     return (
         <nav className="navegacao">
             <ul className="navegacao__lista">
                 <li className="navegacao__item navegacao__item--ativo">
-                    <AiOutlineHome />
-                    <span>Home</span>
+                    <Link to={"/"}> 
+                        <AiOutlineHome />
+                        <span>Home</span>
+                    </Link>
                 </li>
                 <li className="navegacao__item">
                     <BsBookmark />
                     <span>Cursos</span>
                 </li>
                 <li className="navegacao__item">
-                    <SlGraduation />
-                    <span>Estudantes</span>
+                    <Link to={"/estudantes"}>
+                        <SlGraduation />
+                        <span>Estudantes</span>
+                    </Link>
                 </li>
                 <li className="navegacao__item">
                     <AiOutlineDollarCircle />
