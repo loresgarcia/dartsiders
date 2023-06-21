@@ -1,6 +1,6 @@
 import "./CampoFormulario.css";
 
-const CampoFormulario = ({titulo, tipo, placeholder, valor, chave, novoEstudante, setNovoEstudante}) => {
+const CampoFormulario = ({titulo, tipo, placeholder, valor, chave, novoEstudante, setNovoEstudante, readOnly}) => {
     const teste = (e) => {
         setNovoEstudante({
             ...novoEstudante,
@@ -17,6 +17,7 @@ const CampoFormulario = ({titulo, tipo, placeholder, valor, chave, novoEstudante
                 placeholder={placeholder} 
                 value={valor} 
                 onChange={(e) => teste(e)}
+                readOnly={readOnly}
                 required 
             />
         </label>
