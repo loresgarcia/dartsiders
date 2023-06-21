@@ -1,3 +1,7 @@
+import { useEffect, useState } from "react";
+
+import axios from "axios";
+
 import { VscEdit } from "react-icons/vsc";
 import { FiTrash } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -5,51 +9,14 @@ import { Link } from "react-router-dom";
 import "./ConteudoEstudantes.css";
 
 const ConteudoEstudantes = () => {
+    const [listaDeEstudantes, setListaDeEstudantes] = useState(null)
     // foto, nome, email, telefone, matricula, admissão
     // Lista de Estudantes
-    const listaDeEstudantes = [ 
-        {
-            foto: "https://github.com/loresgarcia.png",
-            nome: "Júlia",
-            email: "julia@gmail.com",
-            telefone: "48 996582154",
-            matricula: "1234567305477760",
-            admissao: "08/12/2021",
-        },
-        {
-            foto: "https://github.com/loresgarcia.png",
-            nome: "Marcos",
-            email: "marcos@gmail.com",
-            telefone: "48 996582154",
-            matricula: "1234567305477760",
-            admissao: "08/12/2021",
-        },
-        {
-            foto: "https://github.com/loresgarcia.png",
-            nome: "Yuri",
-            email: "yuri@gmail.com",
-            telefone: "48 996582154",
-            matricula: "1234567305477760",
-            admissao: "08/12/2021",
-        },
-        {
-            foto: "https://github.com/loresgarcia.png",
-            nome: "Henrique",
-            email: "henrique@gmail.com",
-            telefone: "48 996582154",
-            matricula: "1234567305477760",
-            admissao: "08/12/2021",
-        },
-        {
-            foto: "https://github.com/loresgarcia.png",
-            nome: "Lara",
-            email: "lara@gmail.com",
-            telefone: "48 996582154",
-            matricula: "1234567305477760",
-            admissao: "08/12/2021",
-        },
-    ]
-    
+    useEffect(() => {
+        axios.get("http://localhost:3000/dados")
+        .then(resposta => setListaDeEstudantes(resposta.data))
+    }, [])
+
     return (
         <div className="estudantes">
             <div className="estudantes__cabecalho">
@@ -68,8 +35,8 @@ const ConteudoEstudantes = () => {
                     <th>Admissão</th>
                     <th></th>
                 </tr>
-                {listaDeEstudantes.map((estudante) => (
-                    <tr className="tabela__estudante">
+                {listaDeEstudantes ? listaDeEstudantes.map((estudante, id) => (
+                    <tr key={id} className="tabela__estudante">
                         <td className="tabela__primeira-celula">
                             <img className="tabela__foto" src={estudante.foto} alt={`Foto de ${estudante.nome}`} /> 
                         </td>
@@ -83,7 +50,7 @@ const ConteudoEstudantes = () => {
                             <button><FiTrash size={ "20px" } style={{ color: "#A700D0" }} /></button>
                         </td>
                     </tr>
-                ))}
+                )) : null}
                 
             </table>
         </div>
