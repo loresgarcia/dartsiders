@@ -1,4 +1,7 @@
 .pagina-estudantes {
     align-items: flex-start;
     display: flex;
+    position: relative;
+    left: 300px;
+    width: calc(100vw - 300px);
 }

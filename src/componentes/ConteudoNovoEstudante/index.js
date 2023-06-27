@@ -1,13 +1,17 @@
 import { useState } from "react";
 
+import { redirect } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import axios from "axios";
 
 import CampoFormulario from "../CampoFormulario";
+import AvisoCadastro from "../AvisoCadastro";
 
 import "./ConteudoNovoEstudante.css";
 
 const ConteudoNovoEstudante = () => {
+    const [exibirAviso, setExibirAviso] = useState(false);
+
     const dataAtual = new Date()
     
     const dia = dataAtual.getDate().toString().padStart(2, '0');
@@ -36,7 +40,15 @@ const ConteudoNovoEstudante = () => {
         e.preventDefault()
         axios.post("http://localhost:3000/dados", novoEstudante)
             .then(resposta => console.log(resposta.data))
+
+        setExibirAviso(true);
     }
+
+    const fecharAviso = () => {
+        setExibirAviso(false);
+        
+        return redirect("/estudantes")
+    };
 
     return (
         <div className="novo-estudante">
@@ -103,6 +115,9 @@ const ConteudoNovoEstudante = () => {
                     Adicionar estudante
                 </button>
             </form>
+            {exibirAviso && (
+                <AvisoCadastro exibirAviso={exibirAviso} fecharAviso={fecharAviso} />
+            )}
         </div>
     )
 }
