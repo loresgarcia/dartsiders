@@ -3,7 +3,7 @@ import "./Cartao.css";
 
 const Cartao = ({icone, titulo, subtitulo, link}) => { // recebendo as props
     return (
-        <Link to={link}>
+        <Link to={link} style={{textDecoration: "none"}}>
             <div className="cartao">
                 {icone}
                 <p>{titulo}</p>

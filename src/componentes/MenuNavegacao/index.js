@@ -11,32 +11,32 @@ const MenuNavegacao = () => {
         <nav className="navegacao">
             <ul className="navegacao__lista">
                 <li className="navegacao__item navegacao__item--ativo">
-                    <Link to={"/"}> 
-                        <AiOutlineHome />
-                        <span>Home</span>
+                    <Link to={"/"} style={{ textDecoration: 'none' }}> 
+                        <AiOutlineHome className="item__icone item__icone--ativo" />
+                        <span className="item__titulo item__titulo--ativo" >Home</span>
                     </Link>
                 </li>
                 <li className="navegacao__item">
-                    <BsBookmark />
-                    <span>Cursos</span>
+                    <BsBookmark className="item__icone" />
+                    <span className="item__titulo">Cursos</span>
                 </li>
                 <li className="navegacao__item">
-                    <Link to={"/estudantes"}>
-                        <SlGraduation />
-                        <span>Estudantes</span>
+                    <Link to={"/estudantes"} style={{ textDecoration: 'none' }}>
+                        <SlGraduation className="item__icone" />
+                        <span className="item__titulo">Estudantes</span>
                     </Link>
                 </li>
                 <li className="navegacao__item">
-                    <AiOutlineDollarCircle />
-                    <span>Pagamentos</span>
+                    <AiOutlineDollarCircle className="item__icone" />
+                    <span className="item__titulo">Pagamentos</span>
                 </li>
                 <li className="navegacao__item">
-                    <HiOutlineDocumentText />
-                    <span>Relatórios</span>
+                    <HiOutlineDocumentText className="item__icone" />
+                    <span className="item__titulo">Relatórios</span>
                 </li>
                 <li className="navegacao__item">
-                    <AiOutlineSetting />
-                    <span>Configurações</span>
+                    <AiOutlineSetting className="item__icone" />
+                    <span className="item__titulo">Configurações</span>
                 </li>
             </ul>
         </nav>        

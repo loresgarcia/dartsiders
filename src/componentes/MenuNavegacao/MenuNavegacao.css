@@ -28,3 +28,11 @@
 .navegacao__item span {
     margin-left: 16px;
 }
+
+.item__titulo, .item__icone {
+    color: #222222;
+}
+
+.item__titulo--ativo, .item__icone--ativo {
+    color: #F2F2F2;
+}
