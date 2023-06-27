@@ -80,6 +80,15 @@
       "email": "nath@gmail.com",
       "matricula": "5A87DF59508F",
       "admissao": "2023-06-27"
+    },
+    {
+      "id": "2fbc266b-c649-4d56-b4b8-35a4db0fe38b",
+      "foto": "https://avatars.githubusercontent.com/u/87247578?v=4",
+      "nome": "Nath",
+      "telefone": "22222222222",
+      "email": "nath@gmail.com",
+      "matricula": "23D057569537",
+      "admissao": "2023-06-27"
     }
   ]
 }

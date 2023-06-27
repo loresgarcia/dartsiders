@@ -18,6 +18,7 @@ const CampoFormulario = ({titulo, tipo, placeholder, valor, chave, novoEstudante
                 value={valor} 
                 onChange={(e) => teste(e)}
                 readOnly={readOnly}
+                style={readOnly === true ? {backgroundColor: "#EEEEEE", color: "#AAAAAA", cursor: "not-allowed"} : {backgroundColor: "#FFFFFF"}}
                 required 
             />
         </label>

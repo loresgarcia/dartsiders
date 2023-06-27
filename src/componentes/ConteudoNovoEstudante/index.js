@@ -111,6 +111,7 @@ const ConteudoNovoEstudante = () => {
                     className="novo-estudante__botao" 
                     onClick={(e) => enviarNovoEstudante(e)} 
                     disabled={botaoDesativado === true}
+                    style={botaoDesativado === true ? {backgroundColor: "#A700D075", cursor: "not-allowed"} : {backgroundColor: "#A700D0"}}
                 >
                     Adicionar estudante
                 </button>
