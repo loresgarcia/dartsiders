@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import "./ConteudoEstudantes.css";
 
 import formatarTelefone from "./funcoes/formatarTelefone";
+import formatarData from "./funcoes/formatarData";
 
 const ConteudoEstudantes = () => {
     const [listaDeEstudantes, setListaDeEstudantes] = useState(null);
@@ -68,7 +69,7 @@ const ConteudoEstudantes = () => {
                             <td>{estudante.email}</td>
                             <td>{formatarTelefone(estudante.telefone)}</td>
                             <td>{estudante.matricula}</td>
-                            <td>{estudante.admissao}</td>
+                            <td>{formatarData(estudante.admissao)}</td>
                             <td className="tabela__ultima-celula">
                                 <button>
                                     <VscEdit size={"20px"} style={{ color: "#A700D0" }} />
