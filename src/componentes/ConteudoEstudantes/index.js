@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 import "./ConteudoEstudantes.css";
 
+import formatarTelefone from "./funcoes/formatarTelefone";
 
 const ConteudoEstudantes = () => {
     const [listaDeEstudantes, setListaDeEstudantes] = useState(null);
@@ -65,7 +66,7 @@ const ConteudoEstudantes = () => {
                             </td>
                             <td>{estudante.nome}</td>
                             <td>{estudante.email}</td>
-                            <td>{estudante.telefone}</td>
+                            <td>{formatarTelefone(estudante.telefone)}</td>
                             <td>{estudante.matricula}</td>
                             <td>{estudante.admissao}</td>
                             <td className="tabela__ultima-celula">
