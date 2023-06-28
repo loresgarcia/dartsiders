@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 
 import "./ConteudoEstudantes.css";
-
 import formatarTelefone from "./funcoes/formatarTelefone";
 import formatarData from "./funcoes/formatarData";
 
@@ -71,9 +70,11 @@ const ConteudoEstudantes = () => {
                             <td>{estudante.matricula}</td>
                             <td>{formatarData(estudante.admissao)}</td>
                             <td className="tabela__ultima-celula">
-                                <button>
-                                    <VscEdit size={"20px"} style={{ color: "#A700D0" }} />
-                                </button>
+                                <Link to={`/editar-estudante/${estudante.id}`}>
+                                    <button>
+                                        <VscEdit size={"20px"} style={{ color: "#A700D0" }} />
+                                    </button>
+                                </Link>
                                 <button onClick={() => excluirEstudante(estudante.id)}>
                                     <FiTrash size={"20px"} style={{ color: "#A700D0" }} />
                                 </button>

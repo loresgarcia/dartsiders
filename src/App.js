@@ -5,6 +5,7 @@ import PaginaLogin from "./paginas/PaginaLogin";
 import PaginaEstudantes from "./paginas/PaginaEstudantes";
 import PaginaNovoEstudante from "./paginas/PaginaNovoEstudante";
 import MenuLateral from "./componentes/MenuLateral";
+import PaginaEdicaoEstudante from "./paginas/PaginaEdicaoEstudante";
 
 function App() {
   return (
@@ -27,6 +28,12 @@ function App() {
           <>
             <MenuLateral />
             <PaginaNovoEstudante />
+          </>
+        } />
+        <Route path="/editar-estudante/:id" element={
+          <>
+            <MenuLateral />
+            <PaginaEdicaoEstudante />
           </>
         } />
         <Route path="*" element={<div>Página não encontrada</div>} />
