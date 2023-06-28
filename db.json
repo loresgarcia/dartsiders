@@ -2,7 +2,7 @@
   "dados": [
     {
       "id": "1",
-      "foto": "https://github.com/loresgarcia.png",
+      "foto": "https://images.pexels.com/photos/17016108/pexels-photo-17016108/free-photo-of-hora-dourada.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       "nome": "Júlia",
       "email": "julia@gmail.com",
       "telefone": "48 996582154",
@@ -11,7 +11,7 @@
     },
     {
       "id": "2",
-      "foto": "https://github.com/loresgarcia.png",
+      "foto": "https://images.pexels.com/photos/16943630/pexels-photo-16943630/free-photo-of-barba-face-rosto-cara.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       "nome": "Marcos",
       "email": "marcos@gmail.com",
       "telefone": "48 996582154",
@@ -20,7 +20,7 @@
     },
     {
       "id": "3",
-      "foto": "https://github.com/loresgarcia.png",
+      "foto": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "nome": "Yuri",
       "email": "yuri@gmail.com",
       "telefone": "48 996582154",
@@ -29,7 +29,7 @@
     },
     {
       "id": "4",
-      "foto": "https://github.com/loresgarcia.png",
+      "foto": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "nome": "Henrique",
       "email": "henrique@gmail.com",
       "telefone": "48 996582154",
@@ -38,7 +38,7 @@
     },
     {
       "id": "5",
-      "foto": "https://github.com/loresgarcia.png",
+      "foto": "https://images.pexels.com/photos/834872/pexels-photo-834872.jpeg?auto=compress&cs=tinysrgb&w=1600g",
       "nome": "Lara",
       "email": "lara@gmail.com",
       "telefone": "48 996582154",
